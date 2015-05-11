@@ -1,0 +1,29 @@
+.code-well {
+	background-color: black;
+	color: white;
+}
+
+.fa-file {
+	color: #e65656;
+}
+
+.fa-columns {
+	color: #FFD452;
+}
+
+.fa-apple {
+	color: #1fda9a;
+}
+
+#filezilla-title, #sublime-title, #finder-title {
+	cursor: pointer;
+}
+
+#filezilla-up, #sublime-up, #finder-up {
+	display: none;
+}
+#filezilla-content, #sublime-content, #finder-content {
+	display: none;
+}
+
+

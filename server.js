@@ -15,9 +15,11 @@
 */
 
 /* Requires node.js libraries */
-var http = require('http');
 var fs = require('fs');
-var exec = require('child_process').exec;
+var express = require('express');
+var app = express();
+
+function puts(error, stdout, stderr) { sys.puts(stdout) }
 
 var argv = require('minimist')(process.argv.slice(2)); // must-have package
 
@@ -29,39 +31,16 @@ if(isNaN(port)) {
 	process.kill(1);
 } else {
 	console.log("Listening on port " + port);
-	exec('service vsftpd start', function (error, stdout, stderr) {
-	    console.log('stdout: ' + stdout);
-    	console.log('stderr: ' + stderr);
-    	if (error !== null) {
-      		console.log('exec error: ' + error);
-    	}
-	});
 }
 
+app.use(express.static('public'));
 
-http.createServer(function(request, response) {
-	/* index.html is an user interface example */
-	fs.readFile('index.html', 'utf8', function (error, data) {
-		if (error) {
-			return console.log(error);
-		}
-		response.writeHeader(200, {"Content-Type": "text/html"});
-		response.write(data);
-		response.end();
-	});
 
-}).listen(port);
+var server = app.listen(port, function () {
 
-function onExit() {
-	exec('service vsftpd stop', function (error, stdout, stderr) {
-	    console.log('stdout: ' + stdout);
-    	console.log('stderr: ' + stderr);
-    	if (error !== null) {
-      		console.log('exec error: ' + error);
-    	} else {
-    		process.exit(0);
-    	}
-	});
-}
+  var host = server.address().address;
+  var port = server.address().port;
 
-process.on('SIGTERM', onExit);
+  console.log('Example app listening at http://%s:%s', host, port);
+
+});

@@ -1,0 +1,60 @@
+<!-- index.html, an optional user interface :] -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/dropdowns.js"></script>
+
+<div class="container">
+	<h1 class="text-center">FTP server</h1>
+</div>
+<div class="container">
+	<div class="well">
+		<h2 id="filezilla-title"><i id="filezilla-down" class="fa fa-angle-down"></i><i id="filezilla-up" class="fa fa-angle-up"></i> FileZilla SFTP/FTP client <i class="fa fa-file"></i></h2>
+		<div id="filezilla-content">
+			<h3>We can download FileZilla from:</h3>
+			<a href="http://sourceforge.net/projects/filezilla/?source=typ_redirect" target="_blank"><h3>Here</h3></a>
+			<h3>Once you have the FileZilla client downloaded and activated on your computer, enter the domain name in the address field (you can also use the server’s IP address). The username and password you need to type in are the same as the ones you use to log in to your cPanel. The FTP port is 21 and is filled in automatically</h3>
+			<h3>In our case…</h3>
+			<br/>
+			<div class="well code-well">
+				<h3>domain name: home.xway (10.0.0.1)</h3>
+				<h3>username: pi (or root)</h3>		
+				<h3>password: raspberry (or root)</h3>
+			</div>
+			<h3>And press on “Quick connect” button.</h3>
+			<h3>Now, you have a fast and easy connection to the xway´s SFTP server. If you have any doubt about how FileZilla works, I let you all the documentation here.</h3>
+			<h3>Any doubt reach us at @netbeast_co (twitter) or staff [at] netbeast.co.</h3>
+		</div>
+	</div>
+	<div class="well">
+		<h2 id="sublime-title"><i id="sublime-down" class="fa fa-angle-down"></i><i id="sublime-up" class="fa fa-angle-up"></i> Work with Subime text as a SFTP Client <i class="fa fa-columns"></i></h2>
+		<div id="sublime-content">	
+			<h3>First at all, we need to install the Package Control for Sublime following <a href="https://packagecontrol.io/installation#st2" target="_blank">these</a> instructions.</h3>
+			<h3>Use the Package Control: Install Package command from the command palette. The command palette is opened via <strong style="color: #FFD452;">ctrl+shift+p</strong> on Windows and Linux, and <strong style="color: #FFD452;">cmd+shift+p</strong> on OS X.</h3>
+			<h3>Once you run it, type in ‘SFTP’ and press enter.</h3>
+			<h3>Now, we are going to setup our server connection</h3>
+			<img class="img img-responsive center-block" src="img/first.png"/>
+			<h3>SFTP is configured throught a JSON file maintaining the following structure, we recommend this configuration for work with xway os:</h3>
+			<img class="img img-responsive center-block" src="img/second.png"/>
+			<h3>You are ready to keep working in a faster and more confortable way!</h3>
+			<h3>Any doubt reach us at @netbeast_co (twitter) or staff [at] netbeast.co.</h3>
+
+		</div>
+	</div>
+	<div class="well">
+		<h2 id="finder-title"><i id="finder-down" class="fa fa-angle-down"></i><i id="finder-up" class="fa fa-angle-up"></i> FTP from mac finder <i class="fa fa-apple"></i></h2>
+		<div id="finder-content">
+			<h3>Connecting to xway's ftp server via finder is very easy:</h3>
+			<h3>Open a new finder window. Then, select the Go menu in the menu toolbar.</h3>
+			<h3>Select connect to server, note that you can directly access this option with <strong style="color: #1fda9a;">cmd+k</strong>.</h3>
+			<h3>A window like this one will display: </h3>
+			<img class="img img-responsive center-block" src="img/third.png" style="width: 400px;"/>
+			<h3>In "server direction" type <strong style="color: #1fda9a;">ftp://10.0.0.1</strong>, 10.0.0.1 is the xways gateway IP direction in the netbeast-xy network.</h3>
+			<h3></h3>
+			<h3>The only thing left is to hit "Connect". You are ready to access all your xway's files!</h3>
+			<h3>Any doubt reach us at @netbeast_co (twitter) or staff [at] netbeast.co.</h3>
+		</div>
+	</div>
+</div>
