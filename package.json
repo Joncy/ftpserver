@@ -1,5 +1,6 @@
 {
   "name": "SFTPServer",
+  "logo": "folder-icon.png",
   "version": "0.0.1",
   "description": "App that launches xway's own SFTP server and shows you how to use it via several methods",
   "main": "server.js",
