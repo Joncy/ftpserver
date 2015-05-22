@@ -162,10 +162,9 @@ First at all, we need to install the <em>Package Control</em> for Sublime follow
 
 Use the <em>Package Control: Install Package</em> command from the command palette. The command palette is opened via `ctrl+shift+p` on Windows and Linux, and `cmd+shift+p` on OS X.
 
+<a href="http://docs.netbeast.co/wp-content/uploads/2015/04/Captura-de-pantalla-2015-04-13-a-las-17.23.02.png"><img class="  wp-image-150 aligncenter" src="http://docs.netbeast.co/wp-content/uploads/2015/04/Captura-de-pantalla-2015-04-13-a-las-17.23.02-300x169.png" alt="ftp setup" width="389" height="219" /></a>
 Once you run it, type in 'SFTP' and press enter.
-<p style="text-align: left;">Now, we are going to setup our server connection
-<a href="http://docs.netbeast.co/wp-content/uploads/2015/04/Captura-de-pantalla-2015-04-13-a-las-17.23.02.png"><img class="  wp-image-150 aligncenter" src="http://docs.netbeast.co/wp-content/uploads/2015/04/Captura-de-pantalla-2015-04-13-a-las-17.23.02-300x169.png" alt="ftp setup" width="389" height="219" /></a></p>
-SFTP is configured through a JSON file maintaining the following structure, we recommend this configuration for work with <em>xyos</em>:
+Now, we are going to setup our server connection SFTP is configured through a JSON file maintaining the following structure, we recommend this configuration for work with <em>xyos</em>:
 
 <a href="http://docs.netbeast.co/wp-content/uploads/2015/04/Captura-de-pantalla-2015-04-13-a-las-18.50.48.png"><img class="  wp-image-155 aligncenter" src="http://docs.netbeast.co/wp-content/uploads/2015/04/Captura-de-pantalla-2015-04-13-a-las-18.50.48-291x300.png" alt="Captura de pantalla 2015-04-13 a las 18.50.48" width="316" height="326" /></a>
 
