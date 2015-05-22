@@ -2,9 +2,9 @@
 
 This App allows you to enable a SFTP server on your Rasberry Pi. If you are not running the application on xway OS you will need to change the following files:
 
-1. Remove root from '/etc/ftpusers'
+1. Remove `root` from `/etc/ftpusers`
 2. Replace the configuration file:
-<pre class="prettyprint">      
+```      
 # Example config file /etc/vsftpd.conf
 #
 # The default compiled in settings are fairly paranoid. This sample file
@@ -154,7 +154,7 @@ pam_service_name=vsftpd
 rsa_cert_file=/etc/ssl/private/vsftpd.pem
 #
 local_root=/
-</pre>
+```
 
 ##Editing Work with Sublime text as a SFTP Client
 
