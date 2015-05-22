@@ -4,7 +4,7 @@ This App allows you to enable a SFTP server on your Rasberry Pi. If you are not 
 
 1. Remove root from '/etc/ftpusers'
 2. Replace the configuration file:
-'''      
+<pre class="prettyprint">      
 # Example config file /etc/vsftpd.conf
 #
 # The default compiled in settings are fairly paranoid. This sample file
@@ -154,7 +154,7 @@ pam_service_name=vsftpd
 rsa_cert_file=/etc/ssl/private/vsftpd.pem
 #
 local_root=/
-'''
+</pre>
 
 ##Editing Work with Sublime text as a SFTP Client
 
@@ -166,6 +166,7 @@ Once you run it, type in 'SFTP' and press enter.
 <p style="text-align: left;">Now, we are going to setup our server connection
 <a href="http://docs.netbeast.co/wp-content/uploads/2015/04/Captura-de-pantalla-2015-04-13-a-las-17.23.02.png"><img class="  wp-image-150 aligncenter" src="http://docs.netbeast.co/wp-content/uploads/2015/04/Captura-de-pantalla-2015-04-13-a-las-17.23.02-300x169.png" alt="ftp setup" width="389" height="219" /></a></p>
 SFTP is configured through a JSON file maintaining the following structure, we recommend this configuration for work with <em>xyos</em>:
+
 <a href="http://docs.netbeast.co/wp-content/uploads/2015/04/Captura-de-pantalla-2015-04-13-a-las-18.50.48.png"><img class="  wp-image-155 aligncenter" src="http://docs.netbeast.co/wp-content/uploads/2015/04/Captura-de-pantalla-2015-04-13-a-las-18.50.48-291x300.png" alt="Captura de pantalla 2015-04-13 a las 18.50.48" width="316" height="326" /></a>
 
 You are ready to keep working in a faster and more confortable way!
